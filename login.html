@@ -3,9 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Glass morph background layer */
+        body {
+            background: #0d0d1a;
+            overflow: hidden;
+        }
+
+        #bg-root {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Keep existing content above the background */
+        .form-box {
+            position: relative;
+            z-index: 10;
+        }
+
         .input-group {
             position: relative;
             margin: 8px 0;
@@ -66,6 +86,13 @@
             document.getElementById("msg").textContent = "Login Successful!";
         });
     </script>
+
+    <!-- Glass Morph Background (React) -->
+    <div id="bg-root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="morph-bg.js"></script>
 </body>
 
 </html>
