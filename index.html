@@ -24,6 +24,19 @@
         .form-box {
             position: relative;
             z-index: 10;
+
+            /* Glassmorphism */
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            padding: 40px 50px;
+            max-width: 380px;
+            margin: auto;
+            color: #fff;
         }
 
         .btn-group {
@@ -62,7 +75,7 @@
         }
 
         p {
-            color: #666;
+            color: rgba(255, 255, 255, 0.6);
             margin-top: 0;
         }
     </style>
@@ -73,8 +86,8 @@
         <h2>Welcome!</h2>
         <p>Please login or create an account.</p>
         <div class="btn-group">
-            <a href="morph.html" class="btn-login">Login</a>
-            <a href="morph.html" class="btn-signup">Sign Up</a>
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="signup.html" class="btn-signup">Sign Up</a>
         </div>
     </div>
 
@@ -83,7 +96,7 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="morph-bg.js"></script>
+    <script type="text/babel" src=""></script>
 </body>
 
 </html>
