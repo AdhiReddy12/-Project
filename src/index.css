@@ -1,0 +1,132 @@
+/* Global glass morph background layer */
+body {
+  background: #0d0d1a;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#bg-root {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Keep existing content above the background */
+.form-box {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 300px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"],
+.btn-group a {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-login {
+  background: #4CAF50;
+}
+
+.btn-login:hover {
+  background: #45a049;
+}
+
+.btn-signup {
+  background: #2196F3;
+}
+
+.btn-signup:hover {
+  background: #1976D2;
+}
+
+a {
+  color: inherit;
+}
+
+/* Specific to forms */
+.input-group {
+  position: relative;
+  margin: 8px 0;
+}
+
+.input-group input {
+  margin: 0;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.requirements {
+  font-size: 13px;
+  color: #ddd;
+  margin: 8px 0 12px 0;
+  padding-left: 16px;
+}
+
+.requirements li {
+  margin: 3px 0;
+}
